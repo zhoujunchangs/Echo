@@ -3,3 +3,4 @@ build/*
 windows/.vs/*
 sample/*.out
 docs/*
+!/**/.gitkeep
