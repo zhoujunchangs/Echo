@@ -1,0 +1,112 @@
+expected a ',' or ')'.==============================
+>>> OpCode: 
+OpLoadMeta 1
+OpAddObject 10
+OpLoadMeta 1
+OpAddObject 11
+OpAddSetMeta 12 2
+OpPop
+OpLoadMeta 12
+OpLoadMeta 12
+OpLoadMeta 12
+OpAddFuncMeta 2
+OpAddFunction 13 136
+OpAssignTo 14
+OpAssignTo 15
+OpLoadObject 15
+OpLoadObjectMeta
+OpAddObject 16
+OpLoadObject 15
+OpAssign
+OpPop
+OpLoadObject 14
+OpLoadObjectMeta
+OpAddObject 17
+OpLoadObject 14
+OpAssign
+OpPop
+OpLoadMeta 12
+OpAddObject 18
+OpPop
+OpLoadObject 18
+OpExtractDot 10
+OpLoadObject 16
+OpExtractDot 10
+OpLoadObject 17
+OpExtractDot 10
+OpPlus
+OpAssign
+OpPop
+OpLoadObject 18
+OpExtractDot 11
+OpLoadObject 16
+OpExtractDot 11
+OpLoadObject 17
+OpExtractDot 11
+OpPlus
+OpAssign
+OpPop
+OpLoadObject 19
+OpLoadObject 18
+OpAssign
+OpPop
+OpReturn
+OpPop
+OpLoadMeta 12
+OpAddObject 20
+OpPop
+OpLoadObject 20
+OpExtractDot 10
+OpLoadConsts 0
+OpAssign
+OpPop
+OpLoadObject 20
+OpExtractDot 11
+OpLoadConsts 1
+OpAssign
+OpPop
+OpLoadMeta 12
+OpAddObject 21
+OpPop
+OpLoadObject 21
+OpExtractDot 10
+OpLoadConsts 2
+OpAssign
+OpPop
+OpLoadObject 21
+OpExtractDot 11
+OpLoadConsts 3
+OpAssign
+OpPop
+OpPushCurrent
+OpLoadObject 20
+OpLoadObject 21
+OpLoadObject 13
+OpVisit
+OpPrint
+OpPop
+OpEnd
+==============================
+>>> StringSet: 
+@arg0 15
+@arg1 14
+@ret 19
+Array 7
+Bool 4
+Char 3
+Float 2
+Function 6
+Int 1
+None 0
+Point 12
+Reference 5
+Set 8
+Void 9
+a 20
+add 13
+b 21
+l 16
+r 17
+ret 18
+x 10
+y 11

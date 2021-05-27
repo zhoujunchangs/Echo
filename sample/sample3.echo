@@ -1,0 +1,18 @@
+>>> factory: Int=>()=>Int {
+    >> n;
+    >>> sum: ()=>Int {
+        >>> ret: Int;
+        :n>0 {
+            ret = ret+n;
+            n=n-1;
+        }
+        << ret;
+    }
+    << sum;
+}
+
+>>> s: ()=>Int;
+
+s = factory(100);
+
+!s();

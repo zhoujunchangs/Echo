@@ -1,0 +1,21 @@
+>>>Point {
+    x: Int;
+    y: Int;
+};
+
+>>>add: (Point, Point)=>Point {
+    >> l, r;
+    >>> ret: Point;
+    ret.x = l.x + r.x;   
+    ret.y = l.y + r.y;
+    << ret;
+}
+
+>>> a:Point;
+a.x = 2; a.y = 4;
+
+>>> b:Point;
+b.x = 3; b.y = 4;
+
+!add(a, b);
+

@@ -1,0 +1,85 @@
+==============================
+>>> OpCode: 
+OpLoadMeta 1
+OpLoadMeta 1
+OpAddFuncMeta 0
+OpAddFuncMeta 1
+OpAddFunction 10 137
+OpAssignTo 11
+OpLoadObject 11
+OpLoadObjectMeta
+OpAddObject 12
+OpLoadObject 11
+OpAssign
+OpPop
+OpLoadMeta 1
+OpAddFuncMeta 0
+OpAddFunction 13 81
+OpLoadMeta 1
+OpAddObject 14
+OpPop
+OpLoadObject 12
+OpLoadConsts 0
+OpLogic_Greater
+OpIf 41
+OpLoadObject 14
+OpLoadObject 14
+OpLoadObject 12
+OpPlus
+OpAssign
+OpPop
+OpLoadObject 12
+OpLoadObject 12
+OpLoadConsts 1
+OpMinus
+OpAssign
+OpPop
+OpGoto -57
+OpLoadObject 15
+OpLoadObject 14
+OpAssign
+OpPop
+OpReturn
+OpPop
+OpLoadObject 15
+OpLoadObject 13
+OpAssign
+OpPop
+OpReturn
+OpPop
+OpLoadMeta 1
+OpAddFuncMeta 0
+OpAddFunction 16 0
+OpPop
+OpLoadObject 16
+OpPushCurrent
+OpLoadConsts 2
+OpLoadObject 10
+OpVisit
+OpAssign
+OpPop
+OpPushCurrent
+OpLoadObject 16
+OpVisit
+OpPrint
+OpPop
+OpEnd
+==============================
+>>> StringSet: 
+@arg0 11
+@ret 15
+Array 7
+Bool 4
+Char 3
+Float 2
+Function 6
+Int 1
+None 0
+Reference 5
+Set 8
+Void 9
+factory 10
+n 12
+ret 14
+s 16
+sum 13

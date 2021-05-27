@@ -1,0 +1,17 @@
+>>> add: Float=>Float=>Float {
+    >> l;
+    >>> add2: Float=>Float {
+        >> r;
+        << l+r;
+    }
+    << add2;
+}
+>>> a: Int;
+>>> b: Float;
+
+a = 3;
+b = 4.5;
+
+!add(a)(b);
+
+!add(3.4)(b);
