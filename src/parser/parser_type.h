@@ -95,10 +95,12 @@ namespace AST {
 
                 args.push_back(std::move(arg));
 
-                if (getCurrentToken().type != TokenSet::Comma) {
-                    Result::output() << "expected a ',' or ')'.";
+                if (getCurrentToken().type != TokenSet::Right_parenthesis) {
+                    if (getCurrentToken().type != TokenSet::Comma) {
+                        Result::output() << "expected a ',' or ')'.";
+                    }
+                    else getNextToken(); // consume ','
                 }
-                else getNextToken(); // consume ','
             }
         }
         else {
